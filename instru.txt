@@ -1,0 +1,27 @@
+#membuat environment
+python -m venv Env
+
+#upgrade pip
+python -m pip install --upgrade pip
+
+#instalasi django
+pip install django==versi.versi.* (untuk last release)
+
+#daftar pip
+pip list
+
+#memulai environment
+env\scripts\active.bat (windows)
+source env/lib/active (linux)
+
+#keluar environment
+deactivate
+
+#membuat proyek baru
+django-admin startproject namaproyek
+
+#buat baru apps
+python manage.py startapp blog
+
+#mulai service ke webserver
+python manage.py runserver
